@@ -16,7 +16,7 @@ const ListPageWidget: FC = () => {
 
   useEffect(() => {
     dispatch(fetchListPosts({ searchText: debouncedSearchText, page }));
-  }, [debouncedSearchText, page]);
+  }, [dispatch, debouncedSearchText, page]);
 
   return (
     <ListPageWidgetContainer>

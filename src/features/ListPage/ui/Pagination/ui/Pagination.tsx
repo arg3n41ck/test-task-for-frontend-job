@@ -20,11 +20,11 @@ const Pagination: FC = () => {
 
   useEffect(() => {
     dispatch(setPageNumber(extractPageFromUrl(location.search)));
-  }, [location.search]);
+  }, [dispatch, location.search]);
 
   useEffect(() => {
     navigate(getPaginationUrl(currentPage), { replace: true });
-  }, [currentPage]);
+  }, [navigate, currentPage]);
 
   return (
     <PaginationContainer>
