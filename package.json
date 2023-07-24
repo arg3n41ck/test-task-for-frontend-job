@@ -1,7 +1,6 @@
 {
   "name": "test-task-for-job",
   "version": "0.1.0",
-  "homepage": "https://arg3n41ck.github.io/frontend-task",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.16.0",
@@ -71,8 +70,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js",
-    "deploy": "gh-pages -d build"
+    "test": "node scripts/test.js"
   },
   "eslintConfig": {
     "extends": [
@@ -148,7 +146,5 @@
       "react-app"
     ]
   },
-  "devDependencies": {
-    "gh-pages": "^5.0.0"
-  }
+  "devDependencies": {}
 }
