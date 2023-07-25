@@ -18,7 +18,10 @@ const postsSlice = createSlice({
   reducers: {
     setSearchText: (state, { payload }) => {
       state.searchText = payload;
-      state.currentPage = 1;
+
+      if (state.currentPage !== 1) {
+        state.currentPage = 1;
+      }
     },
 
     sortPostsByTitle: (state: PostsListState) =>
