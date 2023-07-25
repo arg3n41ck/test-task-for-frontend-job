@@ -6,18 +6,16 @@ import { ChevronIconBlock } from "./styles";
 interface SortableTableHeaderProps {
   columnName: string;
   sortFunction: () => void;
-  sortDirection: SortDirection;
 }
 
 const SortableTableHeader: FC<SortableTableHeaderProps> = ({
   columnName,
   sortFunction,
-  sortDirection,
 }) => {
   return (
     <th onClick={sortFunction}>
       {columnName}
-      <ChevronIconBlock className={sortDirection === "desc" ? "flipped" : ""}>
+      <ChevronIconBlock>
         <ChevronIcon />
       </ChevronIconBlock>
     </th>

@@ -25,22 +25,13 @@ const List: FC = () => {
 
   return (
     <PostsList>
-      <SortableTableHeader
-        columnName="ID"
-        sortFunction={sortById}
-        sortDirection="asc"
-      />
+      <SortableTableHeader columnName="ID" sortFunction={sortById} />
 
-      <SortableTableHeader
-        columnName="Заголовок"
-        sortFunction={sortByTitle}
-        sortDirection="asc"
-      />
+      <SortableTableHeader columnName="Заголовок" sortFunction={sortByTitle} />
 
       <SortableTableHeader
         columnName="Описание"
         sortFunction={sortByDescription}
-        sortDirection="asc"
       />
     </PostsList>
   );
