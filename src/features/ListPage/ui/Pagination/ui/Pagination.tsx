@@ -9,10 +9,10 @@ import { setPageNumber } from "features/ListPage/model/slices/postsSlice";
 import { PaginationContainer } from "entities/ListPage/Pagination/ui/styles";
 
 const Pagination: FC = () => {
-  const dispatch = useAppDispatch();
-  const { currentPage, totalPages } = useAppSelector((state) => state.list);
-  const navigate = useNavigate();
   const location = useLocation();
+  const dispatch = useAppDispatch();
+  const navigate = useNavigate();
+  const { currentPage, totalPages } = useAppSelector((state) => state.list);
 
   const handlePaginationChange = (pageNumber: number) => {
     dispatch(setPageNumber(pageNumber));

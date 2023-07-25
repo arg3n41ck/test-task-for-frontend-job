@@ -1,13 +1,13 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const URL = "https://jsonplaceholder.typicode.com";
-
-export interface FetchListPostsOptions {
+interface FetchListPostsOptions {
   page?: number;
   pageSize?: number;
   searchText?: string;
 }
+
+const URL = "https://jsonplaceholder.typicode.com";
 
 export const fetchListPosts = createAsyncThunk(
   "posts/get",
