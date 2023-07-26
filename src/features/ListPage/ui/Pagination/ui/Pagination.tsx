@@ -36,7 +36,7 @@ const Pagination: FC = () => {
         Назад
       </button>
 
-      <div>
+      <div className="pagination_numbers_container">
         {Array.from({ length: totalPages }, (_, index) => index + 1).map(
           (pageNumber) => (
             <button

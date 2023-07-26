@@ -6,6 +6,11 @@ export const PaginationContainer = styled.div`
   justify-content: space-between;
   padding: 0 41px;
 
+  .pagination_numbers_container {
+    display: flex;
+    gap: 10px;
+  }
+
   button {
     background: none;
     border: none;
